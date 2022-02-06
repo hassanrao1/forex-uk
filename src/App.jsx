@@ -268,7 +268,7 @@ function App() {
   return (
     <div className="main-class">
       <div className="header-cont mt-4">
-        <div className="col-md-4 d-flex flex-column align-items-start for-mobile-screen ">
+        <div className="col-md-4 d-flex flex-column  for-mobile-screen ">
           <div className="h4">Program</div>
           <div className="d-flex ">
             <button
