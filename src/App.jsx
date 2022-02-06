@@ -416,7 +416,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand((preValue) => !preValue)}
+            onClick={() => {
+              setExpand((preValue) => !preValue);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               {/* <img src="/images/downicons.png" className="icon" alt="icon" />{" "} */}
@@ -459,7 +470,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand1((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1((preValue) => !preValue);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               {/* <img src="/images/downicons.png" className="icon" alt="icon" />{" "} */}
@@ -493,7 +515,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand2((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2((preValue) => !preValue);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               {/* <img src="/images/downicons.png" className="icon" alt="icon" />{" "} */}
@@ -526,7 +559,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand3((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3((preValue) => !preValue);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               {/* <img src="/images/downicons.png" className="icon" alt="icon" />{" "} */}
@@ -560,7 +604,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand4((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4((preValue) => !preValue);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               {/* <img src="/images/downicons.png" className="icon" alt="icon" />{" "} */}
@@ -597,7 +652,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand5((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5((preValue) => !preValue);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               {/* <img src="/images/downicons.png" className="icon" alt="icon" />{" "} */}
@@ -627,7 +693,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand6((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6((preValue) => !preValue);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               {/* <img src="/images/downicons.png" className="icon" alt="icon" />{" "} */}
@@ -656,7 +733,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand7((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7((preValue) => !preValue);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               {/* <img src="/images/downicons.png" className="icon" alt="icon" />{" "} */}
@@ -690,7 +778,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand8((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8((preValue) => !preValue);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               {/* <img src="/images/downicons.png" className="icon" alt="icon" />{" "} */}
@@ -737,7 +836,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand9((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9((preValue) => !preValue);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               {/* <img src="/images/downicons.png" className="icon" alt="icon" />{" "} */}
@@ -803,7 +913,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand((preValue) => !preValue)}
+            onClick={() => {
+              setExpand((preValue) => !preValue);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               {/* <img src="/images/downicons.png" className="icon" alt="icon" />{" "} */}
@@ -837,7 +958,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand1((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1((preValue) => !preValue);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               <i
@@ -872,7 +1004,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand2((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2((preValue) => !preValue);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               <i
@@ -906,7 +1049,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand3((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3((preValue) => !preValue);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               <i
@@ -941,7 +1095,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand4((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4((preValue) => !preValue);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               <i
@@ -979,7 +1144,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand5((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5((preValue) => !preValue);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               <i
@@ -1010,7 +1186,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand6((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6((preValue) => !preValue);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               <i
@@ -1040,7 +1227,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand7((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7((preValue) => !preValue);
+              setExpand8(false);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               <i
@@ -1075,7 +1273,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand8((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8((preValue) => !preValue);
+              setExpand9(false);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               <i
@@ -1111,7 +1320,18 @@ function App() {
         <div className="d-flex border mt-1 row">
           <div
             className="left-side col-md-4 "
-            onClick={() => setExpand9((preValue) => !preValue)}
+            onClick={() => {
+              setExpand(false);
+              setExpand1(false);
+              setExpand2(false);
+              setExpand3(false);
+              setExpand4(false);
+              setExpand5(false);
+              setExpand6(false);
+              setExpand7(false);
+              setExpand8(false);
+              setExpand9((preValue) => !preValue);
+            }}
           >
             <div className="d-flex align-items-center ms-2">
               <i
