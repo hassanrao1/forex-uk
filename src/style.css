@@ -50,6 +50,7 @@
 .bg-blue {
   background-color: #6ec1e4;
   padding: 5px;
+  cursor: pointer;
 }
 
 .btn-outline-info {

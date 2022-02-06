@@ -96,10 +96,6 @@ function App() {
       columnB2: "$1,280,000",
       columnB3: "$1,920,000",
       columnB4: "$2,880,000",
-      // payment1: "$160",
-      // payment2: "$404",
-      // payment3: "$470",
-      // payment4: "$609",
       payment1: "£150",
       payment2: "£410",
       payment3: "£550",
@@ -108,14 +104,22 @@ function App() {
       paymentA2: "£299",
       paymentA3: "£349",
       paymentA4: "£449",
-      // instantAggressiveAndLowRisk1: "£150",
-      // instantAggressiveAndLowRisk2: "£410",
-      // instantAggressiveAndLowRisk3: "£550",
-      // instantAggressiveAndLowRisk4: "£950",
-      // evaluationAggressiveAndLowRisk1: "£119",
-      // evaluationAggressiveAndLowRisk2: "£299",
-      // evaluationAggressiveAndLowRisk3: "£349",
-      // evaluationAggressiveAndLowRisk4: "£449",
+      instantAggressive1: "12272",
+      instantAggressive2: "12273",
+      instantAggressive3: "12274",
+      instantAggressive4: "12275",
+      instantLowRisk1: "12268",
+      instantLowRisk2: "12269",
+      instantLowRisk3: "12270",
+      instantLowRisk4: "12271",
+      evaluationAggressive1: "12280",
+      evaluationAggressive2: "12281",
+      evaluationAggressive3: "12282",
+      evaluationAggressive4: "12283",
+      evaluationLowRisk1: "12276",
+      evaluationLowRisk2: "12277",
+      evaluationLowRisk3: "12278",
+      evaluationLowRisk4: "12279",
     },
     EUR: {
       columnH1: "€12,000",
@@ -130,10 +134,6 @@ function App() {
       columnB2: "€1,152,000",
       columnB3: "€1,600,000",
       columnB4: "€2,560,000",
-      // payment1: "€140",
-      // payment2: "€354",
-      // payment3: "€414",
-      // payment4: "€529",
       payment1: "£150",
       payment2: "£410",
       payment3: "£550",
@@ -142,14 +142,22 @@ function App() {
       paymentA2: "£299",
       paymentA3: "£349",
       paymentA4: "£449",
-      // instantAggressiveAndLowRisk1: "£150",
-      // instantAggressiveAndLowRisk2: "£410",
-      // instantAggressiveAndLowRisk3: "£550",
-      // instantAggressiveAndLowRisk4: "£950",
-      // evaluationAggressiveAndLowRisk1: "£119",
-      // evaluationAggressiveAndLowRisk2: "£299",
-      // evaluationAggressiveAndLowRisk3: "£349",
-      // evaluationAggressiveAndLowRisk4: "£449",
+      instantAggressive1: "12288",
+      instantAggressive2: "12289",
+      instantAggressive3: "12290",
+      instantAggressive4: "12291",
+      instantLowRisk1: "12284",
+      instantLowRisk2: "12285",
+      instantLowRisk3: "12286",
+      instantLowRisk4: "12287",
+      evaluationAggressive1: "12296",
+      evaluationAggressive2: "12297",
+      evaluationAggressive3: "12298",
+      evaluationAggressive4: "12299",
+      evaluationLowRisk1: "12292",
+      evaluationLowRisk2: "12293",
+      evaluationLowRisk3: "12294",
+      evaluationLowRisk4: "12295",
     },
     GBP: {
       columnH1: "£10,000",
@@ -192,44 +200,39 @@ function App() {
   });
   let cartUrl = "https://www.forextradersuk.com/basket/?add-to-cart=";
   const handleRedirect = (index) => {
-    // window.open(
-    //   `${cartUrl}${
-    //     currencyData[selectedCurrency][`instantAggressive${index}`]
-    //   }`
-    // );
     if (isInstant && isAggressive) {
-      console.log(
-        `${cartUrl}`,
-        currencyData[selectedCurrency][`instantAggressive${index}`]
-      );
+      // console.log(
+      //   `${cartUrl}`,
+      //   currencyData[selectedCurrency][`instantAggressive${index}`]
+      // );
       window.open(
         `${cartUrl}${
           currencyData[selectedCurrency][`instantAggressive${index}`]
         }`
       );
     } else if (isInstant && !isAggressive) {
-      console.log(
-        `${cartUrl}`,
-        currencyData[selectedCurrency][`instantLowRisk${index}`]
-      );
+      // console.log(
+      //   `${cartUrl}`,
+      //   currencyData[selectedCurrency][`instantLowRisk${index}`]
+      // );
       window.open(
         `${cartUrl}${currencyData[selectedCurrency][`instantLowRisk${index}`]}`
       );
     } else if (!isInstant && isAggressive) {
-      console.log(
-        `${cartUrl}`,
-        currencyData[selectedCurrency][`evaluationAggressive${index}`]
-      );
+      // console.log(
+      //   `${cartUrl}`,
+      //   currencyData[selectedCurrency][`evaluationAggressive${index}`]
+      // );
       window.open(
         `${cartUrl}${
           currencyData[selectedCurrency][`evaluationAggressive${index}`]
         }`
       );
     } else if (!isInstant && !isAggressive) {
-      console.log(
-        `${cartUrl}`,
-        currencyData[selectedCurrency][`evaluationLowRisk${index}`]
-      );
+      // console.log(
+      //   `${cartUrl}`,
+      //   currencyData[selectedCurrency][`evaluationLowRisk${index}`]
+      // );
       window.open(
         `${cartUrl}${
           currencyData[selectedCurrency][`evaluationLowRisk${index}`]
@@ -1133,7 +1136,10 @@ function App() {
         ) : null}
         <div className="col-md-8">
           <div className="d-flex align-items-center h-100 mx-3">
-            <div className="col-md-2 w-100 rounded text-center text-white fw-bold m-2 bg-blue">
+            <div
+              className="col-md-2 w-100 rounded text-center text-white fw-bold m-2 bg-blue"
+              onClick={() => handleRedirect(currentIndex)}
+            >
               {isInstant
                 ? currencyData[selectedCurrency][`payment${currentIndex}`]
                 : currencyData[selectedCurrency][`paymentA${currentIndex}`]}
