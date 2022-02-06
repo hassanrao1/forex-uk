@@ -79,6 +79,9 @@ function App() {
   const [expend9, setExpand9] = useState(false);
 
   const [isAggressive, setIsAggressive] = useState(false);
+  const [isInstant, setIsInstant] = useState(false);
+  const [selectedCurrency, setSelectedCurrency] = useState("GBP");
+  const [currentIndex, setCurrentIndex] = useState(1);
   const [currencyData, setCurrencyData] = useState({
     USD: {
       columnH1: "$14,000",
@@ -93,10 +96,26 @@ function App() {
       columnB2: "$1,280,000",
       columnB3: "$1,920,000",
       columnB4: "$2,880,000",
-      payment1: "$160",
-      payment2: "$404",
-      payment3: "$470",
-      payment4: "$609",
+      // payment1: "$160",
+      // payment2: "$404",
+      // payment3: "$470",
+      // payment4: "$609",
+      payment1: "£150",
+      payment2: "£410",
+      payment3: "£550",
+      payment4: "£950",
+      paymentA1: "£119",
+      paymentA2: "£299",
+      paymentA3: "£349",
+      paymentA4: "£449",
+      // instantAggressiveAndLowRisk1: "£150",
+      // instantAggressiveAndLowRisk2: "£410",
+      // instantAggressiveAndLowRisk3: "£550",
+      // instantAggressiveAndLowRisk4: "£950",
+      // evaluationAggressiveAndLowRisk1: "£119",
+      // evaluationAggressiveAndLowRisk2: "£299",
+      // evaluationAggressiveAndLowRisk3: "£349",
+      // evaluationAggressiveAndLowRisk4: "£449",
     },
     EUR: {
       columnH1: "€12,000",
@@ -111,10 +130,26 @@ function App() {
       columnB2: "€1,152,000",
       columnB3: "€1,600,000",
       columnB4: "€2,560,000",
-      payment1: "€140",
-      payment2: "€354",
-      payment3: "€414",
-      payment4: "€529",
+      // payment1: "€140",
+      // payment2: "€354",
+      // payment3: "€414",
+      // payment4: "€529",
+      payment1: "£150",
+      payment2: "£410",
+      payment3: "£550",
+      payment4: "£950",
+      paymentA1: "£119",
+      paymentA2: "£299",
+      paymentA3: "£349",
+      paymentA4: "£449",
+      // instantAggressiveAndLowRisk1: "£150",
+      // instantAggressiveAndLowRisk2: "£410",
+      // instantAggressiveAndLowRisk3: "£550",
+      // instantAggressiveAndLowRisk4: "£950",
+      // evaluationAggressiveAndLowRisk1: "£119",
+      // evaluationAggressiveAndLowRisk2: "£299",
+      // evaluationAggressiveAndLowRisk3: "£349",
+      // evaluationAggressiveAndLowRisk4: "£449",
     },
     GBP: {
       columnH1: "£10,000",
@@ -129,20 +164,83 @@ function App() {
       columnB2: "£960,000",
       columnB3: "£1,280,000",
       columnB4: "£2,240,000",
-      payment1: "£119",
-      payment2: "£299",
-      payment3: "£349",
-      payment4: "£449",
+      payment1: "£150",
+      payment2: "£410",
+      payment3: "£550",
+      payment4: "£950",
+      paymentA1: "£119",
+      paymentA2: "£299",
+      paymentA3: "£349",
+      paymentA4: "£449",
+      instantAggressive1: "2575",
+      instantAggressive2: "2576",
+      instantAggressive3: "2577",
+      instantAggressive4: "2578",
+      instantLowRisk1: "2587",
+      instantLowRisk2: "2593",
+      instantLowRisk3: "2594",
+      instantLowRisk4: "2595",
+      evaluationAggressive1: "10993",
+      evaluationAggressive2: "10992",
+      evaluationAggressive3: "10991",
+      evaluationAggressive4: "10990",
+      evaluationLowRisk1: "9051",
+      evaluationLowRisk2: "9054",
+      evaluationLowRisk3: "9055",
+      evaluationLowRisk4: "9056",
     },
   });
-  const [selectedCurrency, setSelectedCurrency] = useState("GBP");
-  const [currentIndex, setCurrentIndex] = useState(1);
+  let cartUrl = "https://www.forextradersuk.com/basket/?add-to-cart=";
+  const handleRedirect = (index) => {
+    // window.open(
+    //   `${cartUrl}${
+    //     currencyData[selectedCurrency][`instantAggressive${index}`]
+    //   }`
+    // );
+    if (isInstant && isAggressive) {
+      console.log(
+        `${cartUrl}`,
+        currencyData[selectedCurrency][`instantAggressive${index}`]
+      );
+      window.open(
+        `${cartUrl}${
+          currencyData[selectedCurrency][`instantAggressive${index}`]
+        }`
+      );
+    } else if (isInstant && !isAggressive) {
+      console.log(
+        `${cartUrl}`,
+        currencyData[selectedCurrency][`instantLowRisk${index}`]
+      );
+      window.open(
+        `${cartUrl}${currencyData[selectedCurrency][`instantLowRisk${index}`]}`
+      );
+    } else if (!isInstant && isAggressive) {
+      console.log(
+        `${cartUrl}`,
+        currencyData[selectedCurrency][`evaluationAggressive${index}`]
+      );
+      window.open(
+        `${cartUrl}${
+          currencyData[selectedCurrency][`evaluationAggressive${index}`]
+        }`
+      );
+    } else if (!isInstant && !isAggressive) {
+      console.log(
+        `${cartUrl}`,
+        currencyData[selectedCurrency][`evaluationLowRisk${index}`]
+      );
+      window.open(
+        `${cartUrl}${
+          currencyData[selectedCurrency][`evaluationLowRisk${index}`]
+        }`
+      );
+    }
+  };
 
   const handleAggressive = () => {
     setIsAggressive((preValue) => !preValue);
   };
-
-  const [isInstant, setIsInstant] = useState(false);
 
   const handleInstant = () => {
     setIsInstant((preValue) => !preValue);
@@ -163,7 +261,6 @@ function App() {
       return;
     }
   };
-  console.log(currencyData[selectedCurrency][`columnH${currentIndex}`]);
 
   return (
     <div className="main-class">
@@ -650,20 +747,38 @@ function App() {
           </div>
           <div className="col-md-8">
             <div className="d-flex align-items-center h-100 mx-3">
-              <div className="col-md-2 w-25 rounded text-center text-white fw-bold  bg-blue">
-                {currencyData[selectedCurrency].payment1}
+              <div
+                className="col-md-2 w-25 rounded text-center text-white fw-bold  bg-blue"
+                onClick={() => handleRedirect(1)}
+              >
+                {isInstant
+                  ? currencyData[selectedCurrency].payment1
+                  : currencyData[selectedCurrency].paymentA1}
               </div>
-              <div className="col-md-2 w-25 rounded text-center text-white fw-bold m-1 bg-blue">
-                {currencyData[selectedCurrency].payment2}
+              <div
+                className="col-md-2 w-25 rounded text-center text-white fw-bold m-1 bg-blue"
+                onClick={() => handleRedirect(2)}
+              >
+                {isInstant
+                  ? currencyData[selectedCurrency].payment2
+                  : currencyData[selectedCurrency].paymentA2}
               </div>
               <div
                 className="col-md-2 w-25 rounded text-center text-white fw-bold bg-blue"
                 style={{ marginRight: "5px" }}
+                onClick={() => handleRedirect(3)}
               >
-                {currencyData[selectedCurrency].payment3}
+                {isInstant
+                  ? currencyData[selectedCurrency].payment3
+                  : currencyData[selectedCurrency].paymentA3}
               </div>
-              <div className="col-md-2 w-25 rounded text-center text-white fw-bold bg-blue">
-                {currencyData[selectedCurrency].payment4}
+              <div
+                className="col-md-2 w-25 rounded text-center text-white fw-bold bg-blue"
+                onClick={() => handleRedirect(4)}
+              >
+                {isInstant
+                  ? currencyData[selectedCurrency].payment4
+                  : currencyData[selectedCurrency].paymentA4}
               </div>
             </div>
           </div>
@@ -1019,7 +1134,9 @@ function App() {
         <div className="col-md-8">
           <div className="d-flex align-items-center h-100 mx-3">
             <div className="col-md-2 w-100 rounded text-center text-white fw-bold m-2 bg-blue">
-              {currencyData[selectedCurrency][`payment${currentIndex}`]}
+              {isInstant
+                ? currencyData[selectedCurrency][`payment${currentIndex}`]
+                : currencyData[selectedCurrency][`paymentA${currentIndex}`]}
             </div>
           </div>
         </div>
