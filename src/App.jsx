@@ -15,7 +15,7 @@ function App() {
       id: 1,
       title: "Target",
       value:
-        "The milestone target is set for each funding level, once this target has been reached, please close all open trades and report the achievement to Forex Traders UK. We will increase your funding amount by 400% on hitting the first milestone and double the funding amount for every other milestone hit.",
+        "The milestone target is set for each funding level, once this target has been reached, please close all open trades and report the achievement to FTUK. We will increase your funding amount by 400% on hitting the first milestone and double the funding amount for every other milestone hit.",
     },
     {
       id: 2,
@@ -51,13 +51,13 @@ function App() {
       id: 7,
       title: "Profit split",
       value:
-        "Forex Traders UK issues the trading capital and you bring in the trading. We take full responsibility for any potential trading losses occurred by you and split any profits between the fund and the trader. The higher the level you’re trading on, the higher your share is. It’s also good to know that pay-outs are never being deducted from your forward progression towards the next milestone. Earn and grow at the same time with Forex Traders UK!",
+        "FTUK issues the trading capital and you bring in the trading. We take full responsibility for any potential trading losses occurred by you and split any profits between the fund and the trader. The higher the level you’re trading on, the higher your share is. It’s also good to know that pay-outs are never being deducted from your forward progression towards the next milestone. Earn and grow at the same time with FTUK!",
     },
     {
       id: 8,
       title: "Maximum funding",
       value:
-        "At Forex Traders UK, we guarantee maximum trading capital in the form of funding. Our maximum is currently £2,240,000 per trading account. A trader is allowed to have 3 active accounts simultaneously and therefore the maximum funding per trader is set at £6,720,000",
+        "At FTUK, we guarantee maximum trading capital in the form of funding. Our maximum is currently £2,240,000 per trading account. A trader is allowed to have 3 active accounts simultaneously and therefore the maximum funding per trader is set at £6,720,000",
     },
     {
       id: 9,
@@ -505,9 +505,9 @@ function App() {
             <div className="col-md-12">
               The milestone target is set for each funding level, once this
               target has been reached, please close all open trades and report
-              the achievement to Forex Traders UK. We will increase your funding
-              amount by 400% on hitting the first milestone and double the
-              funding amount for every other milestone hit.
+              the achievement to FTUK. We will increase your funding amount by
+              400% on hitting the first milestone and double the funding amount
+              for every other milestone hit.
             </div>
           </div>
         ) : null}
@@ -637,14 +637,7 @@ function App() {
         {expend4 ? (
           <div className="d-flex">
             <div className="col-md-12">
-              Our offered instruments: You can trade forex, metals, indices and
-              commodities with us. Forex: EUR/USD, GBP/USD, USD/JPY, USD/CAD,
-              AUD/USD, NZD/USD, USD/CHF, AUD/CAD, AUD/CHF, AUD/JPY, AUD/NZD,
-              CAD/CHF, CAD/JPY, CHF/JPY, EUR/AUD, EUR/CAD, EUR/CHF, EUR/GBP,
-              EUR/JPY, EUR/NZD, GBP/AUD, GBP/CAD, GBP/CHF, GBP/JPY, GBP/NZD,
-              NZD/CAD, NZD/CHF, NZD/JPY. Metals: XAU/USD, XAG/USD Indices:
-              AUS200, E35EUR, 100GBP, F40EUR, D30EUR, JPN225, E50EUR, SP500,
-              NAS100, DJI30 Commodities: UK/OIL, US/OIL
+              You can trade forex, metals, indices and commodities with us.
             </div>
           </div>
         ) : null}
@@ -764,13 +757,13 @@ function App() {
         {expend7 ? (
           <div className="d-flex">
             <div className="col-md-12">
-              Forex Traders UK issues the trading capital and you bring in the
-              trading. We take full responsibility for any potential trading
-              losses occurred by you and split any profits between the fund and
-              the trader. The higher the level you’re trading on, the higher
-              your share is. It’s also good to know that pay-outs are never
-              being deducted from your forward progression towards the next
-              milestone. Earn and grow at the same time with Forex Traders UK!
+              FTUK issues the trading capital and you bring in the trading. We
+              take full responsibility for any potential trading losses occurred
+              by you and split any profits between the fund and the trader. The
+              higher the level you’re trading on, the higher your share is. It’s
+              also good to know that pay-outs are never being deducted from your
+              forward progression towards the next milestone. Earn and grow at
+              the same time with FTUK!
             </div>
           </div>
         ) : null}
@@ -824,11 +817,10 @@ function App() {
         {expend8 ? (
           <div className="d-flex">
             <div className="col-md-12">
-              At Forex Traders UK, we guarantee maximum trading capital in the
-              form of funding. Our maximum is currently £2,240,000 per trading
-              account. A trader is allowed to have 3 active accounts
-              simultaneously and therefore the maximum funding per trader is set
-              at £6,720,000
+              At FTUK, we guarantee maximum trading capital in the form of
+              funding. Our maximum is currently £2,240,000 per trading account.
+              A trader is allowed to have 3 active accounts simultaneously and
+              therefore the maximum funding per trader is set at £6,720,000
             </div>
           </div>
         ) : null}
@@ -987,9 +979,9 @@ function App() {
             <div className="col-md-12  text-center">
               The milestone target is set for each funding level, once this
               target has been reached, please close all open trades and report
-              the achievement to Forex Traders UK. We will increase your funding
-              amount by 400% on hitting the first milestone and double the
-              funding amount for every other milestone hit.
+              the achievement to FTUK. We will increase your funding amount by
+              400% on hitting the first milestone and double the funding amount
+              for every other milestone hit.
             </div>
           </div>
         ) : null}
@@ -1122,14 +1114,7 @@ function App() {
         {expend4 ? (
           <div className="d-flex">
             <div className="col-md-12  text-center">
-              Our offered instruments: You can trade forex, metals, indices and
-              commodities with us. Forex: EUR/USD, GBP/USD, USD/JPY, USD/CAD,
-              AUD/USD, NZD/USD, USD/CHF, AUD/CAD, AUD/CHF, AUD/JPY, AUD/NZD,
-              CAD/CHF, CAD/JPY, CHF/JPY, EUR/AUD, EUR/CAD, EUR/CHF, EUR/GBP,
-              EUR/JPY, EUR/NZD, GBP/AUD, GBP/CAD, GBP/CHF, GBP/JPY, GBP/NZD,
-              NZD/CAD, NZD/CHF, NZD/JPY. Metals: XAU/USD, XAG/USD Indices:
-              AUS200, E35EUR, 100GBP, F40EUR, D30EUR, JPN225, E50EUR, SP500,
-              NAS100, DJI30 Commodities: UK/OIL, US/OIL
+              You can trade forex, metals, indices and commodities with us.
             </div>
           </div>
         ) : null}
@@ -1254,13 +1239,13 @@ function App() {
         {expend7 ? (
           <div className="d-flex">
             <div className="col-md-12  text-center">
-              Forex Traders UK issues the trading capital and you bring in the
-              trading. We take full responsibility for any potential trading
-              losses occurred by you and split any profits between the fund and
-              the trader. The higher the level you’re trading on, the higher
-              your share is. It’s also good to know that pay-outs are never
-              being deducted from your forward progression towards the next
-              milestone. Earn and grow at the same time with Forex Traders UK!
+              FTUK issues the trading capital and you bring in the trading. We
+              take full responsibility for any potential trading losses occurred
+              by you and split any profits between the fund and the trader. The
+              higher the level you’re trading on, the higher your share is. It’s
+              also good to know that pay-outs are never being deducted from your
+              forward progression towards the next milestone. Earn and grow at
+              the same time with FTUK!
             </div>
           </div>
         ) : null}
@@ -1300,11 +1285,10 @@ function App() {
         {expend8 ? (
           <div className="d-flex">
             <div className="col-md-12  text-center">
-              At Forex Traders UK, we guarantee maximum trading capital in the
-              form of funding. Our maximum is currently £2,240,000 per trading
-              account. A trader is allowed to have 3 active accounts
-              simultaneously and therefore the maximum funding per trader is set
-              at £6,720,000
+              At FTUK, we guarantee maximum trading capital in the form of
+              funding. Our maximum is currently £2,240,000 per trading account.
+              A trader is allowed to have 3 active accounts simultaneously and
+              therefore the maximum funding per trader is set at £6,720,000
             </div>
           </div>
         ) : null}
