@@ -669,7 +669,9 @@ function App() {
           </div>
           <div className="col-md-8">
             <div className="d-flex align-items-center h-100">
-              <div className="col-md-12 text-center">90 days</div>
+              <div className="col-md-12 text-center">
+                {isAggressive ? "90" : "180"} days{" "}
+              </div>
             </div>
           </div>
         </div>
@@ -1164,7 +1166,9 @@ function App() {
         ) : null}
         <div className="col-md-12 ">
           <div className="d-flex justify-content-center w-100 m-2">
-            <div className="text-center fw-bold">90 Days</div>
+            <div className="text-center fw-bold">
+              {isAggressive ? "90" : "180"} days{" "}
+            </div>
           </div>
         </div>
         {/* Seventh Rown */}
