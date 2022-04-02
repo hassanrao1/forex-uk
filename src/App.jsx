@@ -198,41 +198,25 @@ function App() {
       evaluationLowRisk4: "9056",
     },
   });
-  let cartUrl = "https://www.forextradersuk.com/basket/?add-to-cart=";
+  let cartUrl = "https://www.ftuk.com/basket/?add-to-cart=";
   const handleRedirect = (index) => {
     if (isInstant && isAggressive) {
-      // console.log(
-      //   `${cartUrl}`,
-      //   currencyData[selectedCurrency][`instantAggressive${index}`]
-      // );
       window.open(
         `${cartUrl}${
           currencyData[selectedCurrency][`instantAggressive${index}`]
         }`
       );
     } else if (isInstant && !isAggressive) {
-      // console.log(
-      //   `${cartUrl}`,
-      //   currencyData[selectedCurrency][`instantLowRisk${index}`]
-      // );
       window.open(
         `${cartUrl}${currencyData[selectedCurrency][`instantLowRisk${index}`]}`
       );
     } else if (!isInstant && isAggressive) {
-      // console.log(
-      //   `${cartUrl}`,
-      //   currencyData[selectedCurrency][`evaluationAggressive${index}`]
-      // );
       window.open(
         `${cartUrl}${
           currencyData[selectedCurrency][`evaluationAggressive${index}`]
         }`
       );
     } else if (!isInstant && !isAggressive) {
-      // console.log(
-      //   `${cartUrl}`,
-      //   currencyData[selectedCurrency][`evaluationLowRisk${index}`]
-      // );
       window.open(
         `${cartUrl}${
           currencyData[selectedCurrency][`evaluationLowRisk${index}`]
