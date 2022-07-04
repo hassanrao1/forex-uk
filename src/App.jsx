@@ -1079,18 +1079,14 @@ function App() {
         {expend3 ? (
           <div className="d-flex">
             <div className="col-md-12  text-center">
-              Leverage is the use of a smaller amount of capital to gain
-              exposure to larger trading positions. The trader is allowed to
-              utilize the full leverage applied for the account. Leverage is set
-              up as 1:10 for low-risk traders and 1:30 for our aggressive
-              traders.
+            The trader is allowed to utilize the full leverage applied for the account. Leverage is set up as up to 1:50 for low-risk traders and up to 1:100 for our aggressive traders.
             </div>
           </div>
         ) : null}
         <div className="col-md-12 ">
           <div className="d-flex justify-content-center w-100 m-2">
             <div className="text-center fw-bold">
-              {isAggressive ? "1:30" : "1:10"}
+            {isAggressive ? "1:100" : "1:50"}
             </div>
           </div>
         </div>
