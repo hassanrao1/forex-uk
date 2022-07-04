@@ -261,8 +261,8 @@ function App() {
               }}
               className={`${
                 isInstant
-                  ? "btn mx-1 btn-outline-info"
-                  : "btn mx-1 btn-outline-info-active"
+                  ? "btn shadow-none mx-1 btn-outline-info"
+                  : "btn shadow-none mx-1 btn-outline-info-active"
               }`}
             >
               Evaluation
@@ -274,8 +274,8 @@ function App() {
               // className="btn btn-outline-info mx-1"
               className={`${
                 isInstant
-                  ? "btn mx-1  btn-outline-info-active"
-                  : "btn mx-1 btn-outline-info"
+                  ? "btn shadow-none mx-1  btn-outline-info-active"
+                  : "btn shadow-none mx-1 btn-outline-info"
               }`}
             >
               Instant Funding
@@ -291,7 +291,7 @@ function App() {
                 selectedCurrency === "USD"
                   ? "btn-outline-info-active"
                   : "btn-outline-info"
-              } mx-1 w-100 d-flex align-items-center`}
+              } mx-1 w-90 d-flex align-items-center shadow-none`}
             >
               <img src="/images/usd.png" className="flag-icon" />
               USD
@@ -302,7 +302,7 @@ function App() {
                 selectedCurrency === "EUR"
                   ? "btn-outline-info-active"
                   : "btn-outline-info"
-              } mx-1 w-100 d-flex align-items-center`}
+              } mx-1 w-90 d-flex align-items-center shadow-none`}
               // className={`btn cleanbtn flex aic ${  btnSelect4 ? "btn-activ" : ""}`}
             >
               <img src="/images/ero.png" className="flag-icon" />
@@ -314,7 +314,7 @@ function App() {
                 selectedCurrency === "GBP"
                   ? "btn-outline-info-active"
                   : "btn-outline-info"
-              } mx-1 w-100 d-flex align-items-center`}
+              } mx-1 w-90 d-flex align-items-center shadow-none`}
 
               // className={`btn cleanbtn flex aic ${  btnSelect2 ? "btn-activ" : ""}`}
             >
@@ -326,7 +326,7 @@ function App() {
         <div className="col-md-4 for-mobile-screen">
           <div className="h4">Risk</div>
           <div className="d-flex">
-            <button
+            {/* <button
               onClick={() => {
                 setIsAggressive(false);
               }}
@@ -339,8 +339,37 @@ function App() {
               }`}
             >
               Low Risk
-            </button>
-            <button
+            </button> */}
+            <div className="mt-2">
+              <input
+                type="radio"
+                id="lowRisk"
+                name="fav_language"
+                defaultChecked={true}
+                value="low"
+                onChange={(e) =>
+                  e.target.value === "low" && setIsAggressive(false)
+                }
+              />
+               {" "}
+              <label htmlFor="lowRisk" className="fw-bold">
+                Low Risk
+              </label>
+            </div>
+            <div className="mx-2 mt-2">
+              <input
+                type="radio"
+                id="aggressive"
+                name="fav_language"
+                value="aggressive"
+                onChange={(e) => e.target.value === "aggressive" && handleAggressive()}
+              />
+               {" "}
+              <label htmlFor="aggressive" className="fw-bold">
+                Aggressive
+              </label>
+            </div>
+            {/* <button
               onClick={handleAggressive}
               // className="btn btn-outline-info mx-1 w-100"
               className={`${
@@ -350,7 +379,7 @@ function App() {
               }`}
             >
               Aggressive
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
@@ -395,7 +424,7 @@ function App() {
         </div>
       </div>
       {/* desktop */}
-      <div className="row mt-2 desktop mb-5">
+      <div className="row mt-2 desktop">
         {/* first row */}
         <div className="d-flex border mt-1 row">
           <div
@@ -568,7 +597,7 @@ function App() {
           <div className="col-md-8">
             <div className="d-flex align-items-center h-100">
               <div className="col-md-12 text-center">
-                {isAggressive ? "1:30" : "1:10"}
+                {isAggressive ? "1:100" : "1:50"}
               </div>
             </div>
           </div>
@@ -886,7 +915,7 @@ function App() {
         ) : null}
       </div>
       {/* mobile */}
-      <div className="row mt-2 mb-5 mobile justify-content-center">
+      <div className="row mt-2  mobile justify-content-center">
         {/* first row */}
         <div className="d-flex border mt-1 row">
           <div

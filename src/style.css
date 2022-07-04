@@ -38,14 +38,19 @@
 }
 
 .btn-outline-info-active {
-  background-color: #6ec1e4 !important;
-  color: white !important;
-  border: 1px solid #6ec1e4 !important;
-  border-radius: 6px !important;
+  /* background-color: #6ec1e4 !important; */
+  color: #6ec1e4 !important;
+  border-bottom: 2px solid #6ec1e4 !important;
+  border-radius: 0 !important;
   cursor: pointer !important;
   font-weight: 600 !important;
   outline: none !important;
 }
+/* .btn-outline-info-active:focus {
+border: none !important;
+background: red;
+outline: none !important;
+} */
 
 .bg-blue {
   background-color: #6ec1e4;
@@ -54,7 +59,7 @@
 }
 
 .btn-outline-info {
-  border: 1px solid #6ec1e4 !important;
+  border: none !important;
   border-radius: 6px !important;
   color: #000 !important;
   cursor: pointer !important;
@@ -65,14 +70,14 @@
   /* margin-right: 10px !important; */
   /* padding: 10px 16px !important; */
 }
-/* .btn-outline-info:hover {
-  border: 2px solid #6ec1e4 !important;
-  border-radius: 6px !important;
-  color: #000 !important;
-  cursor: pointer !important;
-  font-weight: 600 !important;
-  background-color: #fff;
-} */
+.btn-outline-info:hover{
+  background: none;
+    border: none;
+}
+.btn-outline-info:focus{
+  outline: none !important;
+    border: none !important;
+}
 
 .btn-primaryy {
   background-color: #2c365d;
@@ -88,6 +93,7 @@
 }
 .btn-primaryy:hover {
   color: #fff;
+  cursor: auto;
 }
 
 .col-md-3 {
