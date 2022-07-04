@@ -597,7 +597,7 @@ function App() {
           <div className="col-md-8">
             <div className="d-flex align-items-center h-100">
               <div className="col-md-12 text-center">
-                {isAggressive ? "1:100" : "1:50"}
+                {isAggressive ? "Up to 1:100" : "Up to 1:50"}
               </div>
             </div>
           </div>
@@ -1086,7 +1086,7 @@ function App() {
         <div className="col-md-12 ">
           <div className="d-flex justify-content-center w-100 m-2">
             <div className="text-center fw-bold">
-            {isAggressive ? "1:100" : "1:50"}
+            {isAggressive ? "Up to 1:100" : "Up to 1:50"}
             </div>
           </div>
         </div>
